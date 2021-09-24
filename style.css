@@ -1,0 +1,266 @@
+@charset "UTF8";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 15px;
+}
+
+@font-face {
+  font-family: "BigSholders";
+  src: url("fonts/BigSholdersDisplay/BigShouldersDisplay-Bold.ttf");
+}
+@font-face {
+  font-family: "BigSholdersRegular";
+  src: url("fonts/BigSholdersDisplay/BigShouldersDisplay-Regular.ttf")
+    format("truetype");
+}
+@font-face {
+  font-family: "Lexend";
+  src: url("fonts/Lexend_Deca/LexendDeca-VariableFont_wght.ttf")
+    format("truetype");
+}
+:root {
+  --collor-sedans: #e38826;
+  --collor-suvs: #006970;
+  --collor-luxury: #004241;
+  --collor-paragraph: #ffffffbf;
+  --collor-title-and-button: #f2f2f2;
+}
+
+body {
+  width: 100%;
+  background-color: var(--collor-title-and-button);
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+section {
+  width: 600px;
+  display: flex;
+  top: 100px;
+  margin: 10px;
+}
+
+.sedan {
+  background-color: var(--collor-sedans);
+  height: 345px;
+  border-radius: 5px 0 0 5px;
+  padding: 30px 30px 0 30px;
+}
+
+.sedan h2 {
+  color: var(--collor-title-and-button);
+  font-family: "BigSholders", Arial, Helvetica, sans-serif;
+  font-size: 24px;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+  margin-top: 50px;
+}
+
+.sedan p {
+  color: var(--collor-paragraph);
+  font-family: "Lexend", Arial, Helvetica, sans-serif;
+  font-size: 10px;
+  line-height: 17px;
+  margin-top: 25px;
+}
+
+.sedan img {
+  width: 45px;
+  height: 30px;
+  position: absolute;
+}
+
+.button-sedan {
+  color: var(--collor-sedans);
+  border-style: outset;
+  border-radius: 20px;
+  border: 1px solid transparent;
+  width: 100px;
+  height: 35px;
+  font-family: "Lexend", Arial, Helvetica, sans-serif;
+  font-size: 11px;
+  margin-top: 60px;
+}
+
+.suv {
+  background-color: var(--collor-suvs);
+  max-width: 100%;
+  padding: 30px 30px 0 30px;
+}
+
+.suv h2 {
+  color: var(--collor-title-and-button);
+  font-family: "BigSholders", Arial, Helvetica, sans-serif;
+  font-size: 24px;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+  margin-top: 50px;
+}
+
+.suv p {
+  color: var(--collor-paragraph);
+  font-family: "Lexend", Arial, Helvetica, sans-serif;
+  font-size: 10px;
+  line-height: 17px;
+  margin-top: 25px;
+}
+
+.suv img {
+  width: 45px;
+  height: 30px;
+  position: absolute;
+}
+
+.button-suv {
+  color: var(--collor-suvs);
+  border-style: outset;
+  border-radius: 20px;
+  border: 1px solid transparent;
+  width: 100px;
+  height: 35px;
+  font-family: "Lexend", Arial, Helvetica, sans-serif;
+  font-size: 11px;
+  margin-top: 60px;
+}
+
+.luxury {
+  background-color: var(--collor-luxury);
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  border-radius: 0 5px 5px 0;
+  padding: 30px 30px 0 30px;
+}
+
+.luxury h2 {
+  color: var(--collor-title-and-button);
+  font-family: "BigSholders", Arial, Helvetica, sans-serif;
+  font-size: 24px;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+  margin-top: 50px;
+}
+
+.luxury p {
+  color: var(--collor-paragraph);
+  font-family: "Lexend", Arial, Helvetica, sans-serif;
+  font-size: 10px;
+  line-height: 17px;
+  margin-top: 25px;
+}
+
+.luxury img {
+  width: 45px;
+  height: 30px;
+  position: absolute;
+}
+
+.button-luxury {
+  color: var(--collor-luxury);
+  border-style: outset;
+  border-radius: 20px;
+  border: 1px solid transparent;
+  width: 100px;
+  height: 35px;
+  font-family: "Lexend", Arial, Helvetica, sans-serif;
+  font-size: 11px;
+  margin-top: 60px;
+}
+
+footer {
+  top: 450px;
+  left: 500px;
+}
+
+.attribution a {
+  text-decoration: none;
+  color: var(--collor-sedans);
+  text-align: center;
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+@media (max-width: 425px) {
+  /* Responsividade para telas de Smartphone */
+
+  section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .button-sedan {
+    margin-top: 30px;
+  }
+
+  .sedan {
+    height: 350px;
+    border-radius: 5px 5px 0 0;
+  }
+
+  .sedan h2 {
+    font-size: 2em;
+  }
+
+  .sedan p {
+    width: 300px;
+    font-size: 1em;
+    padding: 5px;
+    line-height: 24px;
+    align-items: center;
+  }
+
+  .button-suv {
+    margin-top: 30px;
+  }
+
+  .suv {
+    height: 350px;
+  }
+
+  .suv h2 {
+    font-size: 2em;
+  }
+
+  .suv p {
+    width: 300px;
+    font-size: 1em;
+    padding: 5px;
+    line-height: 24px;
+    align-items: center;
+  }
+
+  .button-luxury {
+    margin-top: 30px;
+  }
+
+  .luxury {
+    height: 350px;
+    border-radius: 0 0 5px 5px;
+  }
+
+  .luxury h2 {
+    font-size: 2em;
+  }
+
+  .luxury p {
+    width: 300px;
+    font-size: 1em;
+    padding: 5px;
+    line-height: 24px;
+    align-items: center;
+  }
+}
+
+.attribution,
+a {
+  font-size: 0.8em;
+  text-align: center;
+}
