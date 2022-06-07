@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --backgroundSedans: #e38826;
+    --backgroundSuvs: #006970;
+    --backgroundLuxury: #004241;
+    --paragraphs: #ffffffbf;
+    --backgroundHeadingsAndButtons: #f2f2f2;
+    --fontLexend:'Lexend Deca', sans-serif;
+    --fontBigShoulders:'Big Shoulders Display', cursive;
+}
+
+body{
+    font-size: 0.9rem;
+    background-color: var(--backgroundHeadingsAndButtons);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+main{
+    width: 920px;
+    margin-top: 50px;
+    display: flex;
+    align-items: center;    
+}
+
+section{
+    width: 310px;
+    height: 500px;
+    padding: 45px;
+}
+
+.sedans{
+    background-color: var(--backgroundSedans);
+    border-radius: 8px 0 0 8px;
+}
+
+.suvs{
+    background-color: var(--backgroundSuvs);
+}
+
+.luxury{
+    background-color: var(--backgroundLuxury);
+    border-radius: 0 8px 8px 0;
+}
+
+img{
+    width: 60px;
+    height: 40px;
+}
+
+h2{
+    color: var(--backgroundHeadingsAndButtons);
+    font-family: var(--fontBigShoulders);
+    text-transform: uppercase;
+    margin-top: 40px;
+    font-size: 2rem;
+}
+
+p{
+    width: 200px;
+    color: var(--paragraphs);
+    margin-top: 30px;
+    font-family: var(--fontLexend);
+    line-height: 25px;
+}
+
+input{
+    width: 145px;
+    height: 45px;
+    border-radius: 50px;
+    border: 0;
+    margin-top: 90px;
+}
+
+input:hover{
+    background-color: transparent;
+    border: 2px solid var(--backgroundHeadingsAndButtons);
+    color: var(--backgroundHeadingsAndButtons);
+    cursor: pointer;
+}
+
+.btnSedan{
+    color: var(--backgroundSedans);
+    font-family: var(--fontLexend);
+}
+
+.btnSuv{
+    color: var(--backgroundSuvs);
+    font-family: var(--fontLexend);
+}
+
+.btnLuxury{
+    color: var(--backgroundLuxury);
+    font-family: var(--fontLexend);
+}
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+@media (max-width: 425px){
+    main{
+        flex-direction: column;  
+        width: 100vw;  
+    }
+
+    .sedans{
+        border-radius: 8px 8px 0 0;
+    }
+    
+    .luxury{
+        border-radius: 0 0 8px 8px;
+    }
+
+    section{
+    height: 440px;
+    }
+
+    input{
+        margin-top: 30px;
+    }
+
+    h2{
+        font-size: 2.5rem;
+        margin-top: 25px;
+    }
+
+    p{
+        width: 220px;
+    }
+}
